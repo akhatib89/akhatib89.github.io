@@ -50,29 +50,8 @@
         var chartsList = [
             {
                 Title: 'توزيع الطلبة حسب المدن',
-                Description: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي الأدنى من المهارة للصف الرابع -رياضيات بناء على تيمز 2019',
+                Description: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي الأدنى من المهارة للصف الرابع -رياضيات بناء على تيمز 2019 , نسبة الطلاب الذين لم يتجاوزوا الحد الدولي الأدنى من المهارة للصف الرابع -رياضيات بناء على تيمز 2019',
                 URL: 'https://app.powerbi.com/view?r=eyJrIjoiMjk2MWQ3MGEtYjUxYS00YzUwLWJhMGItYjVkYmY3MDk3ZTNhIiwidCI6IjJjZThhYWUwLTc2M2YtNGMyZi05Y2Y4LTc0ZDI1MTI3MDRiMSIsImMiOjl9&pageName=ReportSection'
-            },
-            {
-                Title: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي',
-                Description: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي الأدنى من المهارة للصف الرابع -رياضيات بناء على تيمز 2019',
-                URL: 'https://app.powerbi.com/view?r=eyJrIjoiMGEyMmU2YTQtY2UxNS00MjIyLWIxOWYtMTMzZDE5OGI1YjJiIiwidCI6IjJjZThhYWUwLTc2M2YtNGMyZi05Y2Y4LTc0ZDI1MTI3MDRiMSIsImMiOjl9'
-            },
-            {
-                Title: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي',
-                Description: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي الأدنى من المهارة للصف الرابع -رياضيات بناء على تيمز 2019',
-                URL: 'https://app.powerbi.com/view?r=eyJrIjoiMGEyMmU2YTQtY2UxNS00MjIyLWIxOWYtMTMzZDE5OGI1YjJiIiwidCI6IjJjZThhYWUwLTc2M2YtNGMyZi05Y2Y4LTc0ZDI1MTI3MDRiMSIsImMiOjl9'
-            },
-            {
-                Title: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي',
-                Description: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي الأدنى من المهارة للصف الرابع -رياضيات بناء على تيمز 2019',
-                URL: 'https://app.powerbi.com/view?r=eyJrIjoiMGEyMmU2YTQtY2UxNS00MjIyLWIxOWYtMTMzZDE5OGI1YjJiIiwidCI6IjJjZThhYWUwLTc2M2YtNGMyZi05Y2Y4LTc0ZDI1MTI3MDRiMSIsImMiOjl9'
-            }
-            ,
-            {
-                Title: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي',
-                Description: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي الأدنى من المهارة للصف الرابع -رياضيات بناء على تيمز 2019',
-                URL: 'https://app.powerbi.com/view?r=eyJrIjoiMGEyMmU2YTQtY2UxNS00MjIyLWIxOWYtMTMzZDE5OGI1YjJiIiwidCI6IjJjZThhYWUwLTc2M2YtNGMyZi05Y2Y4LTc0ZDI1MTI3MDRiMSIsImMiOjl9'
             },
             {
                 Title: 'نسبة الطلاب الذين لم يتجاوزوا الحد الدولي',
@@ -90,7 +69,7 @@
             <script>
                 chartsList.forEach(element => {
                     document.write(`
-                    <div class= "col-sm-12 col-md-6" >
+                    <div class= "col-sm-12 col-md-12" >
                         <div class='iframe-container'>
                             <div class='iframe-title'>
                                 ${element.Title}
@@ -101,6 +80,7 @@
                             <div class='iframe-content'>
                                 <iframe allowfullscreen src="${element.URL}" style="width: 100%" title="${element.Title}"></iframe>
                             </div>
+                           
                         </div>
                      </div >
                     `)
